@@ -1,0 +1,2787 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dd93bccd80.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- Slick SLider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- MDB -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="header-mobile-view">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-3">
+                    <div class="header_mobile">
+                        <small><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal12"><i
+                                    class="fa-solid fa-user-pen me-1 fa_account"></i>LOGIN</a>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal13" class="ms-2"><i
+                                    class="fa-solid fa-registered me-1 fa_account"></i>REGISTER</a>
+                        </small>
+
+                        <!-- Log-In -->
+
+                        <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog  modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalLabel">Returning Customer
+                                        </h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="mt-4">
+                                            <div class="row mb-3">
+                                                <label for="inputEmail3" class="col-4 col-form-label">E-Mail
+                                                    Address<span class="marks">*</span></label>
+                                                <div class="col-8">
+                                                    <input type="email" class="form-control" id="inputEmail3"
+                                                        placeholder="E-Mail Address">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputPassword3" class="col-4 col-form-label">
+                                                    Password<span class="marks ">*</span></label>
+                                                <div class="col-8">
+                                                    <input type="password" class="form-control" id="inputPassword3"
+                                                        placeholder="Password">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check mb-3 ps-0">
+
+                                                <label class="form-check-label" for="inlineFormCheck">
+                                                    <a href="" class="privacy">Forgotten Password</a>
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-submit"
+                                                style="width:100% ;">Login</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- End Login -->
+
+                        <!-- Register -->
+                        <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog  modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header pb-0">
+                                        <h2 class="modal-title" id="exampleModalLabel">Your Personal Details
+                                        </h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body pt-0">
+                                        <form class="mt-4">
+                                            <div class="row mb-3">
+                                                <label for="inputEmail3" class="col-4 col-form-label">First Name
+                                                    <span class="marks">*</span></label>
+                                                <div class="col-8">
+                                                    <input type="email" class="form-control" id="inputEmail3"
+                                                        placeholder="First Name">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputEmail3" class="col-4 col-form-label">Last Name
+                                                    <span class="marks">*</span></label>
+                                                <div class="col-8">
+                                                    <input type="email" class="form-control" id="inputEmail3"
+                                                        placeholder="Last Name">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputEmail3" class="col-4 col-form-label">E-Mail
+                                                    <span class="marks">*</span></label>
+                                                <div class="col-8">
+                                                    <input type="email" class="form-control" id="inputEmail3"
+                                                        placeholder="E-Mail">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputEmail3" class="col-4 col-form-label">Telephone
+                                                    <span class="marks">*</span></label>
+                                                <div class="col-8">
+                                                    <input type="tel" class="form-control" id="inputEmail3"
+                                                        placeholder="Telephone">
+                                                </div>
+                                            </div>
+
+                                            <h2 class="modal-title" id="exampleModalLabel">Your Password
+                                            </h2>
+                                            <div class="row mb-3 mt-3">
+                                                <label for="inputPassword3" class="col-4 col-form-label">
+                                                    Password<span class="marks ">*</span></label>
+                                                <div class="col-8">
+                                                    <input type="password" class="form-control" id="inputPassword3"
+                                                        placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputPassword3" class="col-4 col-form-label">
+                                                    Password Confirm<span class="marks ">*</span></label>
+                                                <div class="col-8">
+                                                    <input type="password" class="form-control" id="inputPassword3"
+                                                        placeholder="Password Confirm">
+                                                </div>
+                                            </div>
+                                            <h2 class="modal-title" id="exampleModalLabel">Newsletter
+                                            </h2>
+
+                                            <div class="row d-flex my-3">
+                                                <label for="inputPassword3" class="col-4 col-form-label">
+                                                    Subscribe</label>
+                                                <div class="d-flex col-8">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault1">
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check ms-3">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-check mb-3 ps-0">
+
+                                                <label class="form-check-label" for="inlineFormCheck">I have read and
+                                                    agree to the
+                                                    <a href="" class="privacy">Privacy Policy </a>
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-submit"
+                                                style="width:100% ;">Continue</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="m-0">
+
+    <!-- Header 1 -->
+
+    <header class="header1" data-spy="affix" data-offset-top="197">
+        <div class="container p-4 px-lg-0 px-md-2 px-4">
+            <div class="row justify-content-between">
+                <div class="col-2 order-lg-1 order-md-1 order-1">
+                    <div class="">
+                        <a href="index.html"><img src="img/WebLogo/Weblogo.png" width="161px" height="35px"
+                                alt="not found"></a>
+                    </div>
+                </div>
+                <div class="col-6 px-3 order-lg-2 order-md-2 order-3">
+                    <div class="" id="search">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control" placeholder="Search here...">
+                        <div class="All-btn">
+                            <button class="nav-btn-drop dropdown-toggle" type="button" id="defaultDropdown"
+                                data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                All
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                                <li><a class="dropdown-item" href="#">All</a></li>
+                                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                                <li><a class="dropdown-item" href="#">Bags</a></li>
+                                <li><a class="dropdown-item" href="#">Health & Beauty</a></li>
+                                <li><a class="dropdown-item" href="#">Footwear</a></li>
+                                <li><a class="dropdown-item" href="#">Home Decor</a></li>
+                                <li><a class="dropdown-item" href="#">Electronics</a></li>
+                                <li><a class="dropdown-item" href="#">Appliances</a></li>
+                                <li><a class="dropdown-item" href="#">Baby & Kids</a></li>
+                                <li><a class="dropdown-item" href="#">Flowers</a></li>
+                                <li><a class="dropdown-item" href="#">Food</a></li>
+                                <li><a class="dropdown-item" href="#">Sports</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-5 mt-lg-0 mt-md-0 mt-2 px-xl-0 order-lg-3 order-md-3 order-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="order-xl-1 order-lg-3">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-user me-3"></i>
+                                <div class="header1">
+                                    <p>Account</p>
+                                    <small><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal14">Login</a>
+                                        /
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal15">Register</a>
+                                    </small>
+
+                                    <!-- Log-In -->
+
+                                    <div class="modal fade" id="exampleModal14" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog  modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2 class="modal-title" id="exampleModalLabel">Returning Customer
+                                                    </h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form class="mt-4 form needs-validation " id="form" novalidate>
+                                                        <div class="row mb-3">
+                                                            <label for="inputEmail3" class="col-4 col-form-label">E-Mail
+                                                                Address<span class="marks">*</span></label>
+                                                            <div class="col-8">
+                                                                <input type="text" class="form-control" id="inputEmail3"
+                                                                    autofocus placeholder="E-Mail Address" required>
+                                                                <!-- <div class="invalid-feedback">
+                                                                        Please enter your email
+                                                                      </div> -->
+                                                                <div class="valid-feedback">
+                                                                    Looks good!
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="inputPassword3" class="col-4 col-form-label">
+                                                                Password<span class="marks ">*</span></label>
+                                                            <div class="col-8 has-validation">
+                                                                <input type="password" class="form-control"
+                                                                    id="inputPassword3" autofocus placeholder="Password"
+                                                                    required>
+                                                                <div class="invalid-feedback">
+                                                                    Please enter the right password
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-check mb-3 ps-0">
+
+                                                            <label class="form-check-label" for="inlineFormCheck">
+                                                                <a href="" class="privacy">Forgotten Password</a>
+                                                            </label>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-submit"
+                                                            style="width:100% ;">Login</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- End Login -->
+
+                                    <!-- Register -->
+                                    <div class="modal fade" id="exampleModal15" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog  modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header pb-0">
+                                                    <h2 class="modal-title" id="exampleModalLabel">Your Personal Details
+                                                    </h2>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body pt-0">
+                                                    <form class="mt-4 form needs-validation" id="" novalidate>
+                                                        <div class="row mb-3">
+                                                            <label for="inputEmail6" class="col-4 col-form-label">First
+                                                                Name
+                                                                <span class="marks">*</span></label>
+                                                            <div class="col-8">
+                                                                <input type="text" class="form-control" id="inputEmail6"
+                                                                    placeholder="First Name" required>
+                                                                <div class="valid-feedback">
+                                                                    Looks good!
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="inputEmail7" class="col-4 col-form-label">Last
+                                                                Name
+                                                                <span class="marks">*</span></label>
+                                                            <div class="col-8">
+                                                                <input type="text" class="form-control" id="inputEmail7"
+                                                                    placeholder="Last Name" required>
+                                                                <div class="valid-feedback">
+                                                                    Looks good!
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="inputEmail3" class="col-4 col-form-label">E-Mail
+                                                                <span class="marks">*</span></label>
+                                                            <div class="col-8">
+                                                                <input type="text" class="form-control" id="inputEmail3"
+                                                                    placeholder="E-Mail" required>
+                                                                <div class="invalid-feedback">
+                                                                    Please provide a valid email address.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="inputEmail3"
+                                                                class="col-4 col-form-label">Telephone
+                                                                <span class="marks">*</span></label>
+                                                            <div class="col-8">
+                                                                <input type="tel" class="form-control" id="inputEmail3"
+                                                                    placeholder="Telephone" required>
+                                                                <div class="invalid-feedback">
+                                                                    Please provide a valid Phone Number .
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <h2 class="modal-title" id="exampleModalLabel">Your Password
+                                                        </h2>
+                                                        <div class="row mb-3 mt-3">
+                                                            <label for="inputPassword3" class="col-4 col-form-label">
+                                                                Password<span class="marks ">*</span></label>
+                                                            <div class="col-8">
+                                                                <input type="password" class="form-control"
+                                                                    id="inputPassword3" placeholder="Password" required>
+                                                                <div class="invalid-feedback">
+                                                                    Write your password.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="inputPassword3" class="col-4 col-form-label">
+                                                                Password Confirm<span class="marks ">*</span></label>
+                                                            <div class="col-8">
+                                                                <input type="password" class="form-control"
+                                                                    id="inputPassword3" placeholder="Password Confirm"
+                                                                    required>
+                                                                <div class="invalid-feedback">
+                                                                    Please enter the same password.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h2 class="modal-title" id="exampleModalLabel">Newsletter
+                                                        </h2>
+
+                                                        <div class="row d-flex my-3">
+                                                            <label for="inputPassword3" class="col-4 col-form-label">
+                                                                Subscribe</label>
+                                                            <div class="d-flex col-8">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="flexRadioDefault1">
+                                                                    <label class="form-check-label"
+                                                                        for="flexRadioDefault1">
+                                                                        Yes
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check ms-3">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="flexRadioDefault2"
+                                                                        checked>
+                                                                    <label class="form-check-label"
+                                                                        for="flexRadioDefault2">
+                                                                        No
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-check mb-3 ps-0">
+
+                                                            <label class="form-check-label" for="inlineFormCheck">I have
+                                                                read and agree to the
+                                                                <a href="" class="privacy">Privacy Policy </a>
+                                                            </label>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-submit"
+                                                            style="width:100% ;">Continue</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- End Register -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-xl-2">
+                            <div class="d-flex align-items-center">
+                                <a href="" type="button" class="position-relative">
+                                    <i class="fa-solid fa-heart me-3"></i>
+                                    <span class="position-absolute  translate-middle badge rounded-pill bg-danger"
+                                        style="left:29px ;">
+                                        1
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                                <div class="header1">
+                                    <a href="wishlist.html">
+                                        <p>Wishlist</p>
+                                        <small>Edit Your Wishlist</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass ms-lg-0 ms-md-0 ms-1" id="fa_glass_glass"></i>
+
+                        <i class="fa-solid fa-bag-shopping ms-lg-0 ms-md-0 ms-2"></i>
+
+                        <i class="fa-solid fa-bars me-lg-0 me-md-0 ms-3 " id="menubar"></i>
+                        <div class="comparison order-xl-3">
+                            <div class="d-flex align-items-center">
+                                <a href="" type="button" class="position-relative">
+                                    <i class="fa-solid fa-code-compare me-3"></i>
+                                    <span class="position-absolute translate-middle p-2 badge rounded-pill bg-danger"
+                                        style="left:29px ; padding: 4.2px 7.8px !important;">
+                                        2
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                                <div class="header1">
+                                    <p>Compare</p>
+                                    <small>Product Comparison</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Side Nav -->
+
+    <section id="sidenav">
+        <div>
+            <div class="d-flex justify-content-between align-items-center sidenav-menu py-2 px-3"
+                style="background: rgba(240, 242, 245, 1);">
+                <h2>Menu</h2>
+                <a class="fa-solid fa-xmark" id="closemark" style="font-size:25px;"></a>
+            </div>
+
+            <ul class="d-flex flex-column p-3">
+                <!-- <li class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <i class="fa-solid fa-bars me-2 me-3"></i>
+                        <a>Categories <span
+                                style="background-color:#146678; color: white; padding: 4px 8px;">New</span></a>
+                    </div>
+                    <i class="fa-solid fa-circle-plus"></i>
+                </li> -->
+                <li class="nav-item dropdown dropdown-hover position-static">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-mdb-toggle="dropdown" aria-expanded="false">
+                        <!-- <i class="fa-solid fa-bars me-2 me-3"></i> -->
+                        CATEGORIES
+                    </a>
+                    <div class="dropdown-menu  mt-0 shadow" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                width: 21rem;
+              ">
+
+                        <div class="container">
+                            <div class="row my-2">
+                                <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action">Appliances
+                                        </a>
+                                        <a href="" class="list-group-item list-group-item-action">Fashion</a>
+                                        <a href="" class="list-group-item list-group-item-action">Health
+                                            &
+                                            Beauty</a>
+                                        <a href="" class="list-group-item list-group-item-action">Footwear</a>
+                                        <a href="" class="list-group-item list-group-item-action">Home</a>
+                                        <a href="" class="list-group-item list-group-item-action">Electronics
+                                        </a>
+                                        <a href="" class="list-group-item list-group-item-action">Food</a>
+                                        <a href="" class="list-group-item list-group-item-action">Baby
+                                            &
+                                            Kids</a>
+                                        <a href="" class="list-group-item list-group-item-action">Flowers</a>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action">Appliances
+                                        </a>
+                                        <a href="" class="list-group-item list-group-item-action">Fashion</a>
+                                        <a href="" class="list-group-item list-group-item-action">Health
+                                            &
+                                            Beauty</a>
+                                        <a href="" class="list-group-item list-group-item-action">Footwear</a>
+                                        <a href="" class="list-group-item list-group-item-action">Home</a>
+                                        <a href="" class="list-group-item list-group-item-action">Electronics
+                                        </a>
+                                        <a href="" class="list-group-item list-group-item-action">Food</a>
+                                        <a href="" class="list-group-item list-group-item-action">Baby
+                                            &
+                                            Kids</a>
+                                        <a href="" class="list-group-item list-group-item-action">Flowers</a>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action">Appliances
+                                        </a>
+                                        <a href="" class="list-group-item list-group-item-action">Fashion</a>
+                                        <a href="" class="list-group-item list-group-item-action">Health
+                                            &
+                                            Beauty</a>
+                                        <a href="" class="list-group-item list-group-item-action">Footwear</a>
+                                        <a href="" class="list-group-item list-group-item-action">Home</a>
+                                        <a href="" class="list-group-item list-group-item-action">Electronics
+                                        </a>
+                                        <a href="" class="list-group-item list-group-item-action">Food</a>
+                                        <a href="" class="list-group-item list-group-item-action">Baby
+                                            &
+                                            Kids</a>
+                                        <a href="" class="list-group-item list-group-item-action">Flowers</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- MEGAMENU -->
+                <li class="nav-item dropdown dropdown-hover position-static">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-mdb-toggle="dropdown" aria-expanded="false">
+                        MEGAMENU
+                    </a>
+                    <!-- Dropdown menu -->
+                    <div class="dropdown-menu  mt-0 shadow" aria-labelledby="navbarDropdown" style="
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                position: absolute;
+                left: 0;
+                width: 23rem;
+                height: 32vh;
+                overflow-y: auto;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+              ">
+                        <div class="container">
+                            <div class="row my-4">
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Home Decor
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Mega-menu-images/megamenu1.jpg" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Armchair</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Decor</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Lamps</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Sofa</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Health & Beauty
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Mega-menu-images/megamenu2.jpg" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Accessories</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Body</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Lipstick</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Makeup</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Bags
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Mega-menu-images/megamenu3.jpg" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Backpacks</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Cluthes</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Formal</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Purses</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Home Decor
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Mega-menu-images/megamenu4.jpg" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Accessories</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Dresses</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Pants</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>T-shirts</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Home Decor
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Mega-menu-images/megamenu5.jpg" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Flats</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Flip
+                                            Flops</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Heels</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Running</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Home Decor
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Mega-menu-images/megamenu6.jpg" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Desktops</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Laptops &
+                                            Notebooks</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Components</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Phones &
+                                            PDAs</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- MULTILEVEL -->
+                <li class="nav-item dropdown dropdown-hover position-static">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-mdb-toggle="dropdown" aria-expanded="false">
+                        MULTILEVEL
+                    </a>
+                    <div class="dropdown-menu w-30 mt-0 p-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                border-top-right-radius: 0;
+              ">
+
+                        <div class="container-fluid p-0 shadow">
+                            <div class="row">
+                                <div class="col-12 mb-3 mb-lg-0">
+                                    <div class="list-group-multi list-group-flush py-3">
+                                        <a href="" class="list-group-item list-group-item-action">Desktops
+                                        </a>
+                                        <a href="" class="list-group-item list-group-item-action">Laptops
+                                            &
+                                            Notebooks</a>
+
+                                        <a href="" class="list-group-item list-group-item-action">Components</a>
+                                        <a href="" class="list-group-item list-group-item-action">Phones
+                                            &
+                                            PDAs</a>
+                                        <a href="" class="list-group-item list-group-item-action">Cameras
+                                        </a>
+                                        <a href="" class="list-group-item list-group-item-action">MP3
+                                            Players</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- BRANDS -->
+                <li class="nav-item dropdown dropdown-hover position-static">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-mdb-toggle="dropdown" aria-expanded="false">
+                        BRANDS
+                    </a>
+                    <!-- Dropdown menu -->
+                    <div class="dropdown-menu  mt-0 shadow" aria-labelledby="navbarDropdown" style="
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                position: absolute;
+                left: 0;
+                width: 23rem;
+                height: 32vh;
+                overflow-y: auto;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+              ">
+                        <div class="container">
+                            <div class="row my-4">
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Apple
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Brands-menu-images/brands1.jpg"
+                                            style="border:1px solid rgba(221, 221, 221, 1);" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Apple Cinema
+                                            30"</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>iMac</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>iPhone</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>iPod
+                                            Classic</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Awesome Brand
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Brands-menu-images/brands2.jpg"
+                                            style="border:1px solid rgba(221, 221, 221, 1);" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Bodycorn
+                                            Dress</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>City
+                                            Handbag</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Computer Bag
+                                            Casual ...</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Geometrical
+                                            Purse</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Chic D'or
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Brands-menu-images/brands3.jpg"
+                                            style="border:1px solid rgba(221, 221, 221, 1);" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Black Lace
+                                            Dress</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Eau de
+                                            Parfum</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Large
+                                            Fashion
+                                            Tote Bag</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Large
+                                            Wallet</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Ericksson
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Brands-menu-images/brands4.jpg"
+                                            style="border:1px solid rgba(221, 221, 221, 1);" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Headphones</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Lazy
+                                            Armchair</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Canvas Tote
+                                            Bag</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Flame
+                                            Wireless
+                                            Portable</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Melissa Johnson
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Brands-menu-images/brands5.jpg"
+                                            style="border:1px solid rgba(221, 221, 221, 1);" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Bio
+                                            Butter</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Bronzer
+                                            Brush</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Fresh Ginger
+                                            Perfume</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Mascara
+                                            Curved
+                                            Brush</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-6 mb-4 mb-md-0">
+                                    <p class="text-uppercase font-weight-bold mega-menu2">
+                                        Sarah Bloom
+                                    </p>
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                        data-mdb-ripple-color="light">
+                                        <img src="img/Brands-menu-images/brands6.jpg"
+                                            style="border:1px solid rgba(221, 221, 221, 1);" class="img-fluid" />
+                                        <a href="#!">
+                                            <div class="mask" style="
+                            background-color: rgba(
+                              251,
+                              251,
+                              251,
+                              0.15
+                            );
+                          "></div>
+                                        </a>
+                                    </div>
+                                    <div class="list-group list-group-flush">
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Classic
+                                            Armchair</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Yellow
+                                            Modern
+                                            Armchair</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Chesterfield
+                                            Sofa</a>
+                                        <a href="" class="list-group-item list-group-item-action px-0"><i
+                                                class="fas fa-caret-right pe-2"></i>Eyelash
+                                            Curler</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- SPECIAL -->
+                <li class="nav-item dropdown dropdown-hover position-static">
+                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                        aria-expanded="false" style="color:#dc3545; font-weight: 700;">
+                        SPECIAL
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-envelope me-3"></i><a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-blogger-b me-3"></i>
+                    <a href="blog.html">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-compass me-3"></i><a href="">
+                        Compare
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-secret me-3"></i><a href="">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-question me-3"></i><a href="faq.html">
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-gear me-3"></i><a href="">
+                        Custom Menus
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="modal-backdrop fade show"></div> -->
+
+        </div>
+    </section>
+
+    <!-- Header 2 -->
+
+    <!-- <div class="HeaderProducts"> -->
+    <nav id="header2-main" class="" data-spy="affix" data-offset-top="197">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 px-0">
+                    <div class="d-flex justify-content-between">
+                        <nav class="navbar navbar-expand-lg ">
+                            <!-- Container wrapper -->
+                            <div class="container-fluid px-0">
+                                <!-- Toggle button -->
+                                <button class="navbar-toggler px-0" type="button" data-mdb-toggle="collapse"
+                                    data-mdb-target="#navbarExampleOnHover" aria-controls="navbarExampleOnHover"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+
+                                <!-- Collapsible wrapper -->
+                                <div class="collapse navbar-collapse mega_menu" id="navbarExampleOnHover">
+                                    <!-- Left links -->
+                                    <ul class="navbar-nav me-auto ps-lg-0" style="padding-left: 0.15rem">
+                                        <!-- CATEGORIES -->
+                                        <li class="nav-item dropdown dropdown-hover position-static">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                CATEGORIES
+                                            </a>
+                                            <div class="dropdown-menu w-100 mt-0 shadow"
+                                                aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
+                                        border-top-right-radius: 0;
+                                      ">
+
+                                                <div class="container">
+                                                    <div class="row my-2">
+                                                        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Appliances
+                                                                </a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Fashion</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Health
+                                                                    &
+                                                                    Beauty</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Footwear</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Home</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Electronics
+                                                                </a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Food</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Baby
+                                                                    &
+                                                                    Kids</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Flowers</a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Appliances
+                                                                </a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Fashion</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Health
+                                                                    &
+                                                                    Beauty</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Footwear</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Home</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Electronics
+                                                                </a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Food</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Baby
+                                                                    &
+                                                                    Kids</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Flowers</a>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Appliances
+                                                                </a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Fashion</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Health
+                                                                    &
+                                                                    Beauty</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Footwear</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Home</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Electronics
+                                                                </a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Food</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Baby
+                                                                    &
+                                                                    Kids</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Flowers</a>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- MEGAMENU -->
+                                        <li class="nav-item dropdown dropdown-hover position-static">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                MEGAMENU
+                                            </a>
+                                            <!-- Dropdown menu -->
+                                            <div class="dropdown-menu  mt-0 shadow" aria-labelledby="navbarDropdown"
+                                                style="
+                                        border-top-left-radius: 0;
+                                        border-top-right-radius: 0;
+                                        position: absolute;
+                                        left: 0;
+                                        width: 70rem;
+                                      ">
+                                                <div class="container">
+                                                    <div class="row my-4">
+                                                        <div class="col-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Home Decor
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Mega-menu-images/megamenu1.jpg"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Armchair</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Decor</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Lamps</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Sofa</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Health & Beauty
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Mega-menu-images/megamenu2.jpg"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Accessories</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Body</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Lipstick</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Makeup</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Bags
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Mega-menu-images/megamenu3.jpg"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Backpacks</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Cluthes</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Formal</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Purses</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Home Decor
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Mega-menu-images/megamenu4.jpg"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Accessories</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Dresses</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Pants</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>T-shirts</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Home Decor
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Mega-menu-images/megamenu5.jpg"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Flats</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Flip
+                                                                    Flops</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Heels</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Running</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Home Decor
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Mega-menu-images/megamenu6.jpg"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Desktops</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Laptops
+                                                                    &
+                                                                    Notebooks</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Components</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Phones &
+                                                                    PDAs</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- MULTILEVEL -->
+                                        <li class="nav-item dropdown dropdown-hover position-static">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                MULTILEVEL
+                                            </a>
+                                            <div class="dropdown-menu w-30 mt-0 p-0" aria-labelledby="navbarDropdown"
+                                                style="border-top-left-radius: 0;
+                                        border-top-right-radius: 0;
+                                      ">
+
+                                                <div class="container-fluid p-0 shadow">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-3 mb-lg-0">
+                                                            <div class="list-group-multi list-group-flush py-3">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Desktops
+                                                                </a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Laptops
+                                                                    &
+                                                                    Notebooks</a>
+
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Components</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Phones
+                                                                    &
+                                                                    PDAs</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">Cameras
+                                                                </a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action">MP3
+                                                                    Players</a>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- BRANDS -->
+                                        <li class="nav-item dropdown dropdown-hover position-static">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                                BRANDS
+                                            </a>
+                                            <!-- Dropdown menu -->
+                                            <div class="dropdown-menu  mt-0 shadow" aria-labelledby="navbarDropdown"
+                                                style="
+                                        border-top-left-radius: 0;
+                                        border-top-right-radius: 0;
+                                        position: absolute;
+                                        left: 0;
+                                        width: 70rem;
+                                      ">
+                                                <div class="container">
+                                                    <div class="row my-4">
+                                                        <div class="col-md-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Apple
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Brands-menu-images/brands1.jpg"
+                                                                    style="border:1px solid rgba(221, 221, 221, 1);"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Apple
+                                                                    Cinema
+                                                                    30"</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>iMac</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>iPhone</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>iPod
+                                                                    Classic</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Awesome Brand
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Brands-menu-images/brands2.jpg"
+                                                                    style="border:1px solid rgba(221, 221, 221, 1);"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Bodycorn
+                                                                    Dress</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>City
+                                                                    Handbag</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Computer
+                                                                    Bag
+                                                                    Casual ...</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Geometrical
+                                                                    Purse</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Chic D'or
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Brands-menu-images/brands3.jpg"
+                                                                    style="border:1px solid rgba(221, 221, 221, 1);"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Black
+                                                                    Lace
+                                                                    Dress</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Eau de
+                                                                    Parfum</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Large
+                                                                    Fashion
+                                                                    Tote Bag</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Large
+                                                                    Wallet</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Ericksson
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Brands-menu-images/brands4.jpg"
+                                                                    style="border:1px solid rgba(221, 221, 221, 1);"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Headphones</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Lazy
+                                                                    Armchair</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Canvas
+                                                                    Tote
+                                                                    Bag</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Flame
+                                                                    Wireless
+                                                                    Portable</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Melissa Johnson
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Brands-menu-images/brands5.jpg"
+                                                                    style="border:1px solid rgba(221, 221, 221, 1);"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Bio
+                                                                    Butter</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Bronzer
+                                                                    Brush</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Fresh
+                                                                    Ginger
+                                                                    Perfume</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Mascara
+                                                                    Curved
+                                                                    Brush</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 mb-4 mb-md-0">
+                                                            <p class="text-uppercase font-weight-bold mega-menu2">
+                                                                Sarah Bloom
+                                                            </p>
+                                                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple mb-2"
+                                                                data-mdb-ripple-color="light">
+                                                                <img src="img/Brands-menu-images/brands6.jpg"
+                                                                    style="border:1px solid rgba(221, 221, 221, 1);"
+                                                                    class="img-fluid" />
+                                                                <a href="#!">
+                                                                    <div class="mask" style="
+                                                    background-color: rgba(
+                                                      251,
+                                                      251,
+                                                      251,
+                                                      0.15
+                                                    );
+                                                  "></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="list-group list-group-flush">
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Classic
+                                                                    Armchair</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Yellow
+                                                                    Modern
+                                                                    Armchair</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Chesterfield
+                                                                    Sofa</a>
+                                                                <a href=""
+                                                                    class="list-group-item list-group-item-action px-0"><i
+                                                                        class="fas fa-caret-right pe-2"></i>Eyelash
+                                                                    Curler</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- SPECIAL -->
+                                        <li class="nav-item dropdown dropdown-hover position-static">
+                                            <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                                data-mdb-toggle="dropdown" aria-expanded="false"
+                                                style="color:#dc3545; font-weight: 700;">
+                                                SPECIAL
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- Left links -->
+                                </div>
+                                <!-- Collapsible wrapper -->
+                            </div>
+                            <!-- Container wrapper -->
+                        </nav>
+
+                        <div class="header2-right d-flex align-items-center ">
+                            <div class="">
+                                <ul class="d-flex m-0">
+                                    <li class="nav-item dropdown dropdown-hover position-static">
+                                        <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                                            data-mdb-toggle="dropdown" aria-expanded="false">
+                                            ABOUT
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-hover position-static">
+                                        <a class="nav-link " href="faq.html" id="navbarDropdown" role="button"
+                                            data-mdb-toggle="dropdown" aria-expanded="false">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-hover position-static">
+                                        <a class="nav-link " href="contact.html" id="navbarDropdown" role="button"
+                                            data-mdb-toggle="dropdown" aria-expanded="false">
+                                            Contact
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown dropdown-hover position-static">
+                                        <a class="nav-link " href="blog.html" id="navbarDropdown" role="button"
+                                            data-mdb-toggle="dropdown" aria-expanded="false">
+                                            BLOG
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card-item-right navbar navbar-expand-lg p-0" id="nav_nav">
+                                <button class="navbar-toggler px-0" type="button" data-mdb-toggle="collapse"
+                                    data-mdb-target="#navbarExampleOnHover" aria-controls="navbarExampleOnHover"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarExampleOnHover">
+                                    <ul class="navbar-nav me-auto" id="navbar_nav">
+                                        <li class="nav-item dropdown dropdown-hover position-static">
+                                            <a href="" class="nav-link dropdown-toggle drop_drop" id="navbarDropdown"
+                                                role="button" data-mdb-toggle="dropdown" aria-expanded="false"> <span
+                                                    id="card-total"><a href="" class="px-2 item_total subtotal2"
+                                                        style="background:none !important ;">0 item(s) -
+                                                        $0.00</a>
+                                                    <!-- Dropdown menu -->
+                                                    <div class="dropdown-menu w-100 mt-0"
+                                                        aria-labelledby="navbarDropdown" style="min-width:27rem ;"
+                                                        id="dropdown-cart">
+
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-12 p-0 ">
+                                                                    <div class="cart">
+                                                                        <div class="cart-products"></div>
+
+                                                                        <!-- <div class="cart-footer">
+                                                                            <div class="subtotal">
+                                                                                Subtotal (0 items): $0
+                                                                            </div>
+                                                                            <div class="checkout">
+                                                                                Proceed to checkout
+                                                                            </div>
+                                                                        </div> -->
+
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <div
+                                                                            class="d-flex justify-content-end p-3 subtotal">
+                                                                            Subtotal (0 items): $0
+                                                                        </div>
+                                                                        <hr class="m-0">
+                                                                        <div
+                                                                            class="d-flex justify-content-end p-3 total">
+                                                                            <p class="sub"><b>Total</b></p>
+                                                                            <p class="ms-3 text-end total-price">
+                                                                                <b>$0</b>
+                                                                            </p>
+                                                                        </div>
+                                                                        <hr class="m-0">
+                                                                        <div class="cart-buttons text-center p-3">
+                                                                            <a href="viewCart.html"
+                                                                                class="btn-cart btn">VIEW
+                                                                                CART</a>
+                                                                            <a href="checkout.html"
+                                                                                class="btn-checkout btn ms-2">CHECKOUT</a>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <button type="button" class="position-relative add-to-cart-btn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="white" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                                    </svg>
+                                                    <span
+                                                        class="position-absolute translate-middle p-2 badge rounded-pill bg-danger total-items-in-cart"
+                                                        style="left:45px ;top: 0; padding: 4.2px 7.8px !important;">
+
+                                                        <span class="visually-hidden">unread messages</span>
+                                                    </span>
+                                                </button>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- </div> -->
+
+    <!-- Bread Crumb -->
+
+    <section style="background-color:rgba(240, 242, 245, 1);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-3">
+                    <nav aria-label="breadcrumb"
+                        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="index.html"> <i class="fa-solid fa-house"></i></a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Yellow Modern Armchair</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call us Now -->
+
+    <section id="callus">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="product-info-block d-flex justify-content-center">
+                        <div class="d-lg-flex d-md-flex align-items-center product-info-sections text-center">
+                            <i class="fa-solid fa-truck me-2 mb-lg-0 mb-md-0 mb-2"></i>
+                            <p>FREE SHIPPING</p>
+                        </div>
+                        <div class="d-lg-flex d-md-flex align-items-center product-info-sections text-center">
+                            <i class="fa-solid fa-phone me-2 mb-lg-0 mb-md-0 mb-2"></i>
+                            <p>CALL US NOW</p>
+                        </div>
+                        <div class="d-lg-flex d-md-flex align-items-center product-info-sections text-center">
+                            <i class="fa-solid fa-circle-question me-2 mb-lg-0 mb-md-0 mb-2"></i>
+                            <p>ASK A QUESTION</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Product-Info -->
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-6 d-flex">
+                <div class="d-flex flex-column">
+                    <div class="small-img-col">
+                        <img src="img/All-Products/anti1.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/All-Products/apiquet-shirt1.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/All-Products/applewatch1.png" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/All-Products/comfortablearm2.png" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col sm-img">
+                        <img src="img/All-Products/black-high1.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col sm-img">
+                        <img src="img/All-Products/macbookpro11.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col sm-img">
+                        <img src="img/All-Products/canoneos2.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col sm-img">
+                        <img src="img/All-Products/htc2.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                </div>
+                <div class="ms-2 p-1">
+                    <div id="img-container">
+                        <img src="img/All-Products/apiquet-shirt1.jpg" width="" alt="" class="img-fluid w-100"
+                            id="Mainimg">
+                    </div>
+                    <div class="social-icons d-flex justify-content-center mt-3">
+                        <a href="" class="py-1 px-3 me-2"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="" class="py-1 px-3 me-2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="py-1 px-3 me-2"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="" class="py-1 px-3"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-5">
+                <div class="page-title">
+                    <h1>Yellow Modern Armchair</h1>
+                </div>
+                <div class="rating-page d-flex align-items-center">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="ms-2">
+                        <a href="">Based on 0 reviews.</a> -
+                        <a href="">Write a review</a>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="product-price-group d-flex">
+                    <div class="col-4 page-title">
+                        <div>
+                            <h1 style="font-family: 'Nunito Sans';">$ 3,680.00</h1>
+                            <small>Ex Tax: $3,680.00</small>
+                        </div>
+                    </div>
+                    <div class="col-8" style="border-left:1px solid rgba(221, 221, 221, 1);">
+                        <div class="product-stats d-flex justify-content-between">
+                            <ul>
+                                <li id="stock"><i class="fa-solid fa-check me-2"></i>IN STOCK</li>
+                                <li id="model">Model Model 189</li>
+                            </ul>
+                            <div class="pro-manufacture d-flex flex-column text-center">
+                                <img src="img/Brands-menu-images/brands6.jpg">
+                                <a href="">Sarah Bloom</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Size<span class="marks">*</span></label>
+                    <div class="col-lg-5 col-md-5 col-6">
+                        <select id="inputState" class="form-select">
+                            <option>--- Please Select---</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-check-label product-color d-flex flex-column">
+                    Color
+                    <div>
+                        <label>
+                            <img src="img/Colors/clr1.png" alt="not found">
+                        </label>
+                        <label>
+                            <img src="img/Colors/clr2.png" alt="not found">
+                        </label>
+                        <label>
+                            <img src="img/Colors/clr1.png" alt="not found">
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <input type="number" name="quantity" value="1" data-minimum="1" class="form-control"
+                        style="width: 3.5rem;">
+                    <a href="" class="d-flex align-items-center justify-content-center add-to-cart-btn-btn">
+                        <i class="fa-solid fa-bag-shopping me-2 shopping-bag-bag"></i>
+                        <span class=" ms-1  pt-1">ADD TO CART</span>
+                    </a>
+                    <a href="" class="btn-buy d-flex align-items-center justify-content-center buynow">
+                        <i class="fa-solid fa-dollar-sign me-2 shopping-bag-bag"></i>
+                        <span class="">BUY NOW</span>
+                    </a>
+                </div>
+                <div class="d-lg-flex d-md-flex my-3 wish-compare">
+                    <a href="" class="btn-wishlist d-flex align-items-center justify-content-center btn-wish-compare"><i
+                            class="fa-solid fa-heart shopping-bag-bag me-2"
+                            style="color: red !important ;"></i><span>ADD TO WISH LIST</span></a>
+                    <a href=""
+                        class="btn-wishlist d-flex align-items-center justify-content-center btn-wish-compare ms-lg-2 ms-md-2 mt-lg-0 mt-md-0 mt-2"><i
+                            class="fa-solid fa-sort shopping-bag-bag me-2"></i><span>COMPARE THIS PRODUCT</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="tab" role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs d-flex justify-content-center" role="tablist" id="nav-product">
+                        <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab"
+                                data-toggle="tab">DESCRIPTION</a></li>
+                        <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab"
+                                data-toggle="tab">SPECIFICATIONS</a></li>
+                        <li role="presentation" class="mt-lg-0 mt-md-0 "><a href="#Section3" aria-controls="messages"
+                                role="tab" data-toggle="tab">REVIEWS</a></li>
+                        <li role="presentation" class="mt-lg-0 mt-md-0 mt-3"><a href="#Section4"
+                                aria-controls="messages" role="tab" data-toggle="tab">CUSTOM TABS</a></li>
+                        <li role="presentation" class="mt-lg-0 mt-md-0 mt-3"><a href="#Section5"
+                                aria-controls="messages" role="tab" data-toggle="tab">VIDEOS</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content tabs" id="product-block-tabs">
+                        <div role="tabpanel" class="tab-pane  in active mt-3" id="Section1">
+                            <div class="row page-title px-4">
+                                <p class="para">Product description, along with any other tab can be displayed as tabs,
+                                    accordion or
+                                    all-visible blocks in grid format or one under the other. You can mix and match tabs
+                                    and blocks in any order and any position. Each tab can also be set up as a link and
+                                    point to other pages or open popup modules. Optional "Show More" collapsible block
+                                    content is also available as an option for large and tall descriptions or custom
+                                    content.</p>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane mt-3" id="Section2">
+                            <div class="row px-5">
+                                <table class="table table-bordered product-tab-table">
+                                    <thead>
+                                        <tr>
+                                            <td colspan="2"><strong>Material</strong></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Upholstery</td>
+                                            <td>Faux Velvet</td>
+                                        </tr>
+                                    </tbody>
+                                    <thead>
+                                        <tr>
+                                            <td colspan="2"><strong>Room</strong></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Room</td>
+                                            <td>Entry</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane mt-3" id="Section3">
+                            <div class="row page-title">
+                                <p class="para">There are no reviews for this product</p>
+                                <h4 class="py-2">WRITE A REVIEW</h4>
+                                <span>Please <a href="wishlist.html" class="log-reg">login</a> or <a href="register.html"
+                                        class="log-reg">register</a> to review</span>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane mt-3" id="Section4">
+                            <div class="row page-title">
+                                <p class="para">Unlimited Blocks, Tabs or Accordions with any HTML content can be
+                                    assigned to any
+                                    individual product or to certain groups of products, like entire categories, brands,
+                                    products with specific options, attributes, price range, etc. You can indicate any
+                                    criteria via the advanced product assignment mechanism and only those products
+                                    matching your criteria will display the modules. <br><br>
+
+                                    Also, any module can be selectively activated per device (desktop/tablet/phone),
+                                    customer login status and other criteria. Imagine the possibilities. </p>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane mt-3" id="Section5">
+                            <div class="">
+                                <iframe width="500" height="350" src="https://www.youtube.com/embed/Az-mGR-CehY"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="filter-tag my-4">
+                <span class="tags-title me-2">Tags: </span>
+                <a href="">chair</a>
+                <a href="">yellow</a>
+                <a href="">modern</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-lg-6 slide-slide" style="border-right:1px solid rgba(221, 221, 221, 1);">
+                <div class="tab" role="tabpanel" id="tab_tab">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist" id="nav_nav_tabs">
+                        <li role="presentation" class="active"><a href="#related" aria-controls="home" role="tab"
+                                data-toggle="tab" class="ps-0">RELATED PRODUCTS</a></li>
+                        <li role="presentation"><a href="#people" aria-controls="profile" role="tab" data-toggle="tab"
+                                class="ps-0">PEOPLE ALSO BOUGHT</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content tabs">
+                        <div role="tabpanel" class="tab-pane  in active mt-3" id="related">
+                            <div class="row slider4" style="padding:0 14px ;">
+
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/Modernchair1.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Sarah Bell</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/LazyAmchair1.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Sarah Bloom</a></span>
+                                        <span class="price">$680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/greyarmchair.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/LazyAmchair1.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/lazyamrchair2.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane mt-3" id="people">
+                            <div class="row slider4" style="padding:0 14px ;">
+
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/All-Products/nikond3001.jpg">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Nikon</a></span>
+                                        <span class="price">$4,689.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/All-Products/businessbag1.jpg">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Fort Cane</a></span>
+                                        <span class="price">$250.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/chester1.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/All-Products/ipodnano2.jpg">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/All-Products/fashion-footwear-high-heels-1.jpg">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 you-might-like">
+                <div class="tab" role="tabpanel" id="tab_tab">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist" id="nav_nav_tabs">
+                        <li role="presentation" class="active"><a href="#mightlike" aria-controls="home" role="tab"
+                                data-toggle="tab" class="ps-0">YOU MIGHT LIKE</a></li>
+                        <li role="presentation"><a href="#samebrand" aria-controls="profile" role="tab"
+                                data-toggle="tab" class="ps-0">FROM THE SAME BAND</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content tabs">
+                        <div role="tabpanel" class="tab-pane  in active mt-3" id="mightlike">
+                            <div class="row slider5" style="padding:0 14px ;">
+
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/All-Products/nikond3001.jpg">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Nikon</a></span>
+                                        <span class="price">$4,689.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/All-Products/businessbag1.jpg">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Fort Cane</a></span>
+                                        <span class="price">$250.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/chester1.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/All-Products/ipodnano2.jpg">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/All-Products/fashion-footwear-high-heels-1.jpg">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane mt-3" id="samebrand">
+                            <div class="row slider5" style="padding:0 14px ;">
+
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/Modernchair1.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Sarah Bell</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/LazyAmchair1.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Sarah Bloom</a></span>
+                                        <span class="price">$680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/greyarmchair.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/LazyAmchair1.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+                                <div class="people-bought-container">
+                                    <div class="people-bought position-relative">
+                                        <a href="" id="glass"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                        <img src="img/Categories-tabs/lazyamrchair2.png">
+                                        <div class="cart-group d-flex justify-content-center">
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-lock"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-heart"
+                                                    style="font-size:14px !important; color:white !important;"></i></a>
+                                            <a href="" class="btn_cart"><i class="fa-solid fa-sort"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product_caption d-flex flex-column ">
+                                        <span class="name"><a href="">Modern Armchair</a></span>
+                                        <span class="price">$3,680.00</span>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-tabs -->
+
+    <div id="footer-tabs">
+        <div class="container">
+            <div class="col-lg-12 pt-3 pb-4">
+                <div class="row">
+                    <div class="footertabs"></div>
+                    <!-- Render Footer-tabs -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row renderfooter">
+                        <!-- render footer -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/index.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/footerTabs.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+
+    <!-- Slick Slider Js -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Slick Slider -->
+
+    <script type="text/javascript">
+        $('.slider4').slick({
+            dots: true,
+            infinite: false,
+            speed: 800,
+            autoplay: true,
+            slidesToShow: 3,
+            variableWidth: true,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+
+    <script type="text/javascript">
+        $('.slider5').slick({
+            dots: true,
+            infinite: false,
+            speed: 800,
+            // autoplay: true,
+            slidesToShow: 3,
+            variableWidth: true,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+
+    <!-- Scroll Up Button -->
+
+    <button onclick="topFunction()" id="my-Btn" class="fa fa-arrow-up"></button>
+
+
+
+    <script>
+        mybutton = document.getElementById("my-Btn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- Scroll Down Navbar -->
+    <!-- <script>
+        window.addEventListener('scroll', function () {
+            let navbar = document.querySelector('nav');
+            if (window.pageYOffset > 20) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+
+    </script> -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="flip/flip.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script> -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
